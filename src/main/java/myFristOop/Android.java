@@ -22,5 +22,20 @@ public class Android extends Phone implements Serializable, Charge {
 	public Android() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	public void playStore() {
+		System.out.println(this.getBrand() + this.getModel() + 
+				" is downloading app from the Play Store!");
+	}
+	
+	@Override
+	public void download() {
+		playStore();
+	}
+	
+	@Override
+	public void reset() {
+		System.out.println("Are you sure?");
+	}
 
 }

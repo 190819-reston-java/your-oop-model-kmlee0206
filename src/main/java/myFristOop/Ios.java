@@ -22,5 +22,20 @@ public class Ios extends Phone implements Charge, Serializable {
 	public Ios() {
 		// TODO Auto-generated constructor stub
 	}
+		
+	public void appStore() {
+		System.out.println(this.getBrand() + this.getModel() + 
+				" is downloading app from the App Store!");
+	}
+	
+	@Override
+	public void download() {
+		appStore();
+	}
+	
+	@Override
+	public void reset() {
+		System.out.println("Are you sure?");
+	}
 
 }

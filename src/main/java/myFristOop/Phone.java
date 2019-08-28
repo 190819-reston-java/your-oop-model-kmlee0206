@@ -33,9 +33,9 @@ public abstract class Phone {
 		System.out.println(this.brand + this.model + " is vibrating!");
 	}
 	
-	public abstract void sell();
+	public abstract void download();
 	
-	public abstract void trade();
+	public abstract void reset();
 
 	public String getBrand() {
 		return brand;
@@ -59,6 +59,40 @@ public abstract class Phone {
 
 	public void setRefurbished(boolean refurbished) {
 		this.refurbished = refurbished;
+	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((brand == null) ? 0 : brand.hashCode());
+		result = prime * result + ((model == null) ? 0 : model.hashCode());
+		result = prime * result + (refurbished ? 1231 : 1237);
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Phone other = (Phone) obj;
+		if (brand == null) {
+			if (other.brand != null)
+				return false;
+		} else if (!brand.equals(other.brand))
+			return false;
+		if (model == null) {
+			if (other.model != null)
+				return false;
+		} else if (!model.equals(other.model))
+			return false;
+		if (refurbished != other.refurbished)
+			return false;
+		return true;
 	}
 	
 	
