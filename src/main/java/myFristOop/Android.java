@@ -3,6 +3,11 @@ package myFristOop;
 import java.io.Serializable;
 
 public class Android extends Phone implements Charge, Serializable {
+	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 
 	public Android(String brand, String model, boolean refurbished) {
 		super(brand, model, refurbished);

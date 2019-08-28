@@ -5,7 +5,9 @@ public class PhoneDriver {
 	public static void main(String[] args) {
 
 		Android a = new Android();
-		System.out.println(a.getBrand());
+		Android b = new Android("Samsung", "Galaxy", true); //hard inputing
+		System.out.println(a);
+		System.out.println(b);
 		
 	}
 

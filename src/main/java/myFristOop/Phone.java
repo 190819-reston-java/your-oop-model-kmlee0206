@@ -18,11 +18,11 @@ public abstract class Phone {
 	}
 
 	public Phone(String brand) {
-		this(brand, "iphone7");
+		this(brand, "Device Name");
 	}
 
 	public Phone() {
-		this("Apple");
+		this("Brand Name");
 	}
 	
 	public void ring() {
@@ -95,7 +95,12 @@ public abstract class Phone {
 		return true;
 	}
 	
-	
+	@Override
+	public String toString() {
+		Boolean b = new Boolean(refurbished);
+		String s = this.brand + " " +this.model + " " + b.toString();
+		return s;
+	}
 	
 	
 }

@@ -4,6 +4,11 @@ import java.io.Serializable;
 
 public class Ios extends Phone implements Charge, Serializable {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public Ios(String brand, String model, boolean refurbished) {
 		super(brand, model, refurbished);
 		// TODO Auto-generated constructor stub
