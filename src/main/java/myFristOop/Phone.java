@@ -2,6 +2,8 @@ package myFristOop;
 
 public abstract class Phone {
 
+	public static int device;
+	
 	private String brand;
 	private String model;
 	private boolean refurbished;
@@ -97,8 +99,8 @@ public abstract class Phone {
 	
 	@Override
 	public String toString() {
-		Boolean b = new Boolean(refurbished);
-		String s = this.brand + " " +this.model + " " + b.toString();
+		Boolean r = new Boolean(refurbished);
+		String s = "Phone: " + this.brand + " " +this.model + " " + r.toString();
 		return s;
 	}
 	

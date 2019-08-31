@@ -11,21 +11,21 @@ public class Android extends Phone implements Charge, Serializable {
 
 	public Android(String brand, String model, boolean refurbished) {
 		super(brand, model, refurbished);
-		// TODO Auto-generated constructor stub
+		device++;
 	}
 
 	public Android(String brand, String model) {
 		super(brand, model);
-		// TODO Auto-generated constructor stub
+		device++;
 	}
 
 	public Android(String brand) {
 		super(brand);
-		// TODO Auto-generated constructor stub
+		device++;
 	}
 
 	public Android() {
-		// TODO Auto-generated constructor stub
+		device++;
 	}
 	
 	public void playStore() {

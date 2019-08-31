@@ -35,7 +35,7 @@ public class Ios extends Phone implements Charge, Serializable {
 	
 	public void playStore() {
 		System.out.println(this.getBrand() + this.getModel() + 
-				" ios does not use Play store!");
+				" iOS does not use Play store!");
 	}
 	
 	@Override
