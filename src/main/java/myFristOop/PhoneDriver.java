@@ -15,9 +15,7 @@ public class PhoneDriver {
 		System.out.println(Phone.device);
 		//b.playStore();
 		//b.appStore();
-		//hihihihihhi
 		c.playStore();
-		
 		
 	}
 

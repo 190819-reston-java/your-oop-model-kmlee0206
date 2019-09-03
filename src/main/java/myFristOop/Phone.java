@@ -20,11 +20,11 @@ public abstract class Phone {
 	}
 
 	public Phone(String brand) {
-		this(brand, "Device Name");
+		this(brand, "DeviceName");
 	}
 
 	public Phone() {
-		this("Brand Name");
+		this("BrandName");
 	}
 	
 	public void ring() {
